@@ -1,38 +1,29 @@
 package tictactoe;
+//import java.util.Scanner;
 
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
-        int ROWS = 3;
-        int COLS = 3;
-        char[][] arrayResults = new char [ROWS][COLS];
-
-
-        arrayResults[0][0] = 'O';
-
-        arrayResults[0][1] = 'O';
-
-        arrayResults[0][2] = 'O';
-
-        arrayResults[1][0] = 'O';
-
-        arrayResults[1][1] = 'O';
-
-        arrayResults[1][2] = 'O';
-
-        arrayResults[2][0] = 'O';
-
-        arrayResults[2][1] = 'O';
-
-        arrayResults[2][2] = 'O';
-
-        for(int i = 0; i < 3; i++){
-            for(int j = 0; j < 3; j++){
-                System.out.print(arrayResults[i][j] +" ");
+        Scanner sc = new Scanner(System.in);
+        String input = sc.nextLine();
+        char[] chars = new char [9];
+        for(int i = 0; i < input.length() ; i++){
+            if(i >= 1 && i <10){
+                chars[i-1] = input.charAt(i);
             }
-            System.out.println("");
         }
+
+
+        System.out.println("---------");
+
+        System.out.println("| " + chars[0] + " " + chars[1] + " " + chars[2] + " |");
+
+        System.out.println("| " + chars[3] + " " + chars[4] + " " + chars[5] + " |");
+
+        System.out.println("| " + chars[6] + " " + chars[7] + " " + chars[8] + " |");
+
+        System.out.println("---------");
 
     }
 }
