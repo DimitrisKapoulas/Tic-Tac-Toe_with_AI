@@ -17,8 +17,8 @@ Output example
 
 The example below shows how your output might look.
 
-X O X
-O X O
+X O X</br>
+O X O</br>
 X X O 
 
 Stage #2: Create a simple game field
@@ -36,19 +36,19 @@ Examples below show how your output should look.
 
 Enter cells: "O OXXO XX"
 ---------
-| O   O |
-| X X O |
-|   X X |
+| O - O |</br>
+| X X O |</br>
+| - X X |
 ---------
  Enter cells: "OXO  X OX"
 ---------
-| O X O |
-|     X |
-|   O X |
+| O X O |</br>
+| - - X |</br>
+| - O X |
 ---------
  Enter cells: " XO  X   "
 ---------
-|   X O |
-|     X |
-|       |
+| -  X O |</br>
+| -  -  X |</br>
+|  -  - -  |
 ---------
